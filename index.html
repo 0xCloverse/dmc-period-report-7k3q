@@ -352,7 +352,7 @@ border-radius:999px;padding:4px 12px;cursor:pointer;line-height:1.4}
 .lang:hover{border-color:var(--axis)}
 .mtop .lang{margin-left:auto}
 :root:not([data-lang="ko"]) span[lang="ko"],:root[data-lang="ko"] span[lang="en"]{display:none}
-:root[data-lang="ko"] body{word-break:keep-all;overflow-wrap:anywhere}
+:root[data-lang="ko"] body{word-break:keep-all;overflow-wrap:break-word}
 .it>span{min-width:0}
 
 .guide{--mark:var(--f2);--line:var(--grid);--line-hard:var(--axis);--panel:var(--sunk);--ink-2:var(--ink2);--ink-3:var(--muted)}
@@ -376,6 +376,12 @@ border-radius:999px;padding:4px 12px;cursor:pointer;line-height:1.4}
 .gsec .core .eq b{color:var(--mark)}
 .gsec .rule{border-left:2px solid var(--mark);padding:2px 0 2px 16px;margin:18px 0;max-width:72ch}
 .gsec .rule .t{font-size:10.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--mark);display:block;margin-bottom:2px}
+.gsec .tw{margin:14px 0 20px}
+.gsec table{width:100%;table-layout:auto;font-size:13.5px;line-height:1.65}
+.gsec th{white-space:nowrap}
+.gsec td{overflow-wrap:break-word;word-break:keep-all}
+.gsec td:first-child,.gsec th:first-child{white-space:nowrap;width:1%;padding-right:18px}
+.gsec td:last-child{min-width:12em}
 .gsec caption{caption-side:top;text-align:left;color:var(--muted);font-size:11.5px;padding-bottom:6px}
 .gsec td.n{text-align:right;white-space:nowrap;font-variant-numeric:tabular-nums}
 .gsec .hi td{background:var(--sunk)}
